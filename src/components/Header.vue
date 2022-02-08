@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
  header{
      padding: 20px 0;
      display: flex;

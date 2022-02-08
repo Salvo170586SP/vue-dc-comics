@@ -2,18 +2,21 @@
   <div id="app">
     <Header />
     <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Main,
+    Footer
   },
 };
 </script>
@@ -27,13 +30,18 @@ export default {
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+#app{
+  height: 100%;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
 }
+
 
 a {
   color: black;
