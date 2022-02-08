@@ -6,7 +6,7 @@
       <nav>
           <ul>
               <li><a href="#">Charter</a></li>
-              <li><a href="#">Charter</a></li>
+              <li><a href="#" class="active">Charter</a></li>
               <li><a href="#">Charter</a></li>
               <li><a href="#">Charter</a></li>
               <li><a href="#">Charter</a></li>
@@ -45,6 +45,14 @@ export default {
 
  ul li a{
      font-weight: bold;
+     padding-bottom: 54px;
+ }
+
+ ul li a:hover,
+ ul li a.active
+ {
+    color: #0282F9;
+    border-bottom: 10px solid #0282F9;
  }
 
 
