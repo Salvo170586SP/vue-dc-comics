@@ -65,6 +65,13 @@
           </div>
           <div class="follow">
               <h3>FOLLOW US</h3>
+              <div class="icon-social">
+                  <img src="../assets/img/footer-facebook.png" alt="facebook logo">
+                  <img src="../assets/img/footer-twitter.png" alt="twitter logo">
+                  <img src="../assets/img/footer-youtube.png" alt="youtube logo">
+                  <img src="../assets/img/footer-pinterest.png" alt="pintrest logo">
+                  <img src="../assets/img/footer-periscope.png" alt="periscope logo">               
+              </div>
           </div>
         </div>
       </div>
@@ -120,5 +127,19 @@ ul li a {
   }
 }
 
+.follow{
+    display: flex;
+    align-items: center;
+    h3{
+        color: #0282f9;
+    }
+}
+
+.icon-social{
+    margin-left: 30px;
+    img{
+        margin-left: 10px;
+    }
+}
 
 </style>
