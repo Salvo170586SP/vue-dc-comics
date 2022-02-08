@@ -16,20 +16,23 @@ export default {
 </script>
 
 <style lang="scss">
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
-
-.container{
+.container {
   margin: 0 auto;
   max-width: 1200px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 </style>
