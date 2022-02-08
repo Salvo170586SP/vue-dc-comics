@@ -88,7 +88,6 @@ export default {
 
 ul li {
   list-style-type: none;
-  margin-top: ;
 }
 
 ul li a {
