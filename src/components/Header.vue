@@ -1,22 +1,26 @@
 <template>
-  <header class="container">
-    <figure>
-      <img src="../assets/img/dc-logo.png" alt="DC Logo" />
-    </figure>
-    <nav>
-      <ul>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#" class="active">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-        <li><a href="#">Charter</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <div class="box-header">
+        <figure>
+          <img src="../assets/img/dc-logo.png" alt="DC Logo" />
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#" class="active">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+            <li><a href="#">Charter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -28,10 +32,14 @@ export default {
 
 <style lang="scss" scoped >
 header {
+  background-color: white;
   padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.box-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {

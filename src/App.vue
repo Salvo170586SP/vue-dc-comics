@@ -35,6 +35,7 @@ body {
 
 #app{
   height: 100%;
+  background-color: #303030;
 }
 
 .container {
