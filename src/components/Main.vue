@@ -140,12 +140,11 @@ main {
   height: 600px;
   margin-top: 100px;
 
-h5{
-  background-color: #0282f9;
-  padding: 15px 60px;
-  margin: 50px;
-  cursor: pointer;
-}
-
+  h5 {
+    background-color: #0282f9;
+    padding: 15px 60px;
+    margin: 50px;
+    cursor: pointer;
+  }
 }
 </style>

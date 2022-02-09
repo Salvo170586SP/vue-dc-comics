@@ -7,16 +7,7 @@
         </figure>
         <nav>
           <ul>
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#" class="active">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li v-for="(item, index) in menuItems" :key="index"><a :href="item.url" :class="item.active" >{{ item.text }}</a></li>
           </ul>
         </nav>
       </div>
@@ -27,6 +18,22 @@
 <script>
 export default {
   name: "Header",
+  data(){
+    return{
+      menuItems: [
+        { text: 'CHARACTERS', url:'#', active: false },
+        { text: 'COMICS', url:'#', active: true },
+        { text: 'MOVIES', url:'#', active: false },
+        { text: 'TV', url:'#', active: false },
+        { text: 'GAMES', url:'#', active: false },
+        { text: 'COLLECTIBLES', url:'#', active: false },
+        { text: 'VIDEOS', url:'#', active: false },
+        { text: 'FANS', url:'#', active: false },
+        { text: 'NEWS', url:'#', active: false },
+        { text: 'SHOP', url:'#', active: false },
+      ]
+    }
+  }
 };
 </script>
 
