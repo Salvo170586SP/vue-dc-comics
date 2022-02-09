@@ -57,6 +57,7 @@
       
         </div>
       </div>
+      <img src="../assets/img/dc-logo-bg.png" alt="">
     </div>
     <div class="bottom-footer">
       <div class="container">
@@ -121,11 +122,24 @@ figure{
 }
 
 .top-footer {
+  height: 320px;
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
+  position: relative;
+
+  img{
+     position: absolute;
+    top: -40px;
+    right: 100px;
+    width: 30%;
+  }
+}
+
+.bottom-footer{
+   background-color: #303030;
 }
 
 ul li {
@@ -140,8 +154,6 @@ ul li {
 .b-footer {
   display: flex;
   justify-content: space-around;
- background-color: #303030;
-
  }
 
 .sign-up {
