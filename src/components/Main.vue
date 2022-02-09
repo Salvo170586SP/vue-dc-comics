@@ -3,14 +3,15 @@
     <section id="jumbotron">
       <h3>CURRENT SERIES</h3>
     </section>
-    <section class="container book-container">  
-    <BookCard v-for="(book, index) in books" :key="index" :book="book" />
+    <section class="container book-container">
+      <BookCard v-for="(book, index) in books" :key="index" :book="book" />
+      <h5>LOAD MORE</h5>
     </section>
   </main>
 </template>
 
 <script>
-import BookCard from './BookCard.vue';
+import BookCard from "./BookCard.vue";
 export default {
   name: "Main",
 
@@ -135,7 +136,16 @@ main {
 .book-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   height: 600px;
   margin-top: 100px;
+
+h5{
+  background-color: #0282f9;
+  padding: 15px 60px;
+  margin: 50px;
+  cursor: pointer;
+}
+
 }
 </style>

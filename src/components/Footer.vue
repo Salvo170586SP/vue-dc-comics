@@ -129,9 +129,10 @@ figure{
   background-size: cover;
   color: white;
   position: relative;
+  overflow: hidden;
 
   img{
-     position: absolute;
+    position: absolute;
     top: -40px;
     right: 100px;
     width: 30%;
