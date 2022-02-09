@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 main {
-  line-height: 200px;
+line-height: 200px;
   height: 200px;
   background-color: #1c1c1c;
   color: white;

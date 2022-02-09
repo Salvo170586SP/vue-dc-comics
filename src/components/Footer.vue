@@ -54,6 +54,7 @@
               </ul>
             </nav>
           </div>
+      
         </div>
       </div>
     </div>
@@ -64,14 +65,30 @@
             <a href="#">SIGN-UP NOW!</a>
           </div>
           <div class="follow">
-              <h3>FOLLOW US</h3>
-              <div class="icon-social">
-                  <img src="../assets/img/footer-facebook.png" alt="facebook logo">
-                  <img src="../assets/img/footer-twitter.png" alt="twitter logo">
-                  <img src="../assets/img/footer-youtube.png" alt="youtube logo">
-                  <img src="../assets/img/footer-pinterest.png" alt="pintrest logo">
-                  <img src="../assets/img/footer-periscope.png" alt="periscope logo">               
-              </div>
+            <h3>FOLLOW US</h3>
+            <div class="icon-social">
+              <a href="#"
+                ><img
+                  src="../assets/img/footer-facebook.png"
+                  alt="facebook logo"
+              /></a>
+              <a href="#"
+                ><img src="../assets/img/footer-twitter.png" alt="twitter logo"
+              /></a>
+              <a href="#"
+                ><img src="../assets/img/footer-youtube.png" alt="youtube logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/img/footer-pinterest.png"
+                  alt="pintrest logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../assets/img/footer-periscope.png"
+                  alt="periscope logo"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -86,8 +103,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .box-nav {
   padding-top: 20px;
+  display: flex;
+}
+
+figure{
+    margin-left: 100px;
 }
 
 .nav-left,
@@ -98,48 +121,53 @@ export default {
 }
 
 .top-footer {
-  min-height: 450px;
+  min-height: 500px;
   background-image: url("../assets/img/footer-bg.jpg");
   color: white;
 }
 
 ul li {
   list-style-type: none;
-}
-
-ul li a {
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 100;
+   a {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
 }
 
 .b-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #303030;
+
+ }
 
 .sign-up {
-  padding: 15px 25px;
+  padding: 20px 25px;
   border: 1px solid #0282f9;
-  a{
+  margin: 20px;
+  a {
     color: white;
   }
 }
 
-.follow{
-    display: flex;
-    align-items: center;
-    h3{
-        color: #0282f9;
-    }
+.follow {
+  display: flex;
+  align-items: center;
+  h3 {
+    color: #0282f9;
+  }
 }
 
-.icon-social{
-    margin-left: 30px;
-    img{
-        margin-left: 10px;
-    }
+.icon-social {
+  margin-left: 30px;
+  img {
+    margin-left: 10px;
+  }
 }
-
 </style>
