@@ -4,11 +4,11 @@
       <h3>CURRENT SERIES</h3>
     </section>
     <section class="container book-container">
-      <div class="book-card">
+      <div class="book-card" v-for="(book, index) in books" :key="index">
         <figure>
-          <img :src="books[0].thumb" :alt="books[0].series" />
+          <img :src="book.thumb" :alt="book.series" />
         </figure>
-        <h4>{{ books[0].series }}</h4>
+        <h4>{{ book.series }}</h4>
       </div>
     </section>
   </main>
@@ -137,6 +137,11 @@ main {
   flex-wrap: wrap;
   height: 600px;
   margin-top: 100px;
+
+  .book-card{
+    flex-basis: calc(100% / 6)
+  }
+
 
   figure{
     overflow: hidden;
