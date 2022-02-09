@@ -7,7 +7,7 @@
         </figure>
         <nav>
           <ul>
-            <li v-for="(item, index) in menuItems" :key="index"><a :href="item.url" :class="item.active" >{{ item.text }}</a></li>
+            <li v-for="(item, index) in menuItems" :key="index"><a :href="item.url" :class="{active: item.active}" >{{ item.text }}</a></li>
           </ul>
         </nav>
       </div>
