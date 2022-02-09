@@ -1,9 +1,16 @@
 <template>
   <main>
-   <section id="jumbotron">
-     <h3>CURRENT SERIES</h3>
-   </section>
-   
+    <section id="jumbotron">
+      <h3>CURRENT SERIES</h3>
+    </section>
+    <section class="container book-container">
+      <div class="book-card">
+        <figure>
+          <img :src="books[0].thumb" :alt="books[0].series" />
+        </figure>
+        <h4>{{ books[0].series }}</h4>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -106,17 +113,16 @@ export default {
 
 <style lang="scss" scoped>
 main {
-/*   height: 200px;
- */  background-color: #1c1c1c;
+  background-color: #1c1c1c;
   color: white;
 }
 
-#jumbotron{
+#jumbotron {
   height: 370px;
-  background-image: url('../assets/img/jumbotron.jpg');
+  background-image: url("../assets/img/jumbotron.jpg");
   position: relative;
 
-  h3{
+  h3 {
     background-color: #0282f9;
     color: white;
     position: absolute;
@@ -124,8 +130,30 @@ main {
     left: 200px;
     padding: 20px;
   }
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  margin-top: 100px;
+
+  figure{
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  h4{
+    margin-top: 20px;
+  }
 
 }
+
 
 
 </style>
