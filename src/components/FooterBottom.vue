@@ -50,13 +50,13 @@ export default {
 
 .b-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
  }
 
 .sign-up {
   padding: 20px 25px;
   border: 1px solid #0282f9;
-  margin: 20px;
+  margin: 20px 0;
   a {
     color: white;
   }

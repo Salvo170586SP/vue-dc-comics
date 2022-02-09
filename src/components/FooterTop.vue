@@ -81,7 +81,7 @@ figure{
 .nav-center,
 .nav-right {
   display: inline-block;
-  margin-left: 50px;
+  margin-right: 25px;
 }
 
 .top-footer {
