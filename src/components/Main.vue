@@ -1,10 +1,9 @@
 <template>
   <main>
-    <div class="container">
-
-
-
-    </div>
+   <section id="jumbotron">
+     <h3>CURRENT SERIES</h3>
+   </section>
+   
   </main>
 </template>
 
@@ -14,7 +13,7 @@ export default {
 
   data() {
     return {
-      movies: [
+      books: [
         {
           thumb:
             "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
@@ -105,11 +104,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
-  line-height: 200px;
-  height: 200px;
-  background-color: #1c1c1c;
+/*   height: 200px;
+ */  background-color: #1c1c1c;
   color: white;
 }
+
+#jumbotron{
+  height: 370px;
+  background-image: url('../assets/img/jumbotron.jpg');
+  position: relative;
+
+  h3{
+    background-color: #0282f9;
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 200px;
+    padding: 20px;
+  }
+
+}
+
+
 </style>

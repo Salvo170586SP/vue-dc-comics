@@ -121,8 +121,8 @@ figure{
 }
 
 .top-footer {
-  min-height: 500px;
-  background-image: url("../assets/img/footer-bg.jpg");
+/*   min-height: 500px;
+ */  background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -141,12 +141,8 @@ ul li {
 .b-footer {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #303030;
+/*   height: 100px;  
+ */  background-color: #303030;
 
  }
 
