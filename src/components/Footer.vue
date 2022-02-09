@@ -123,6 +123,9 @@ figure{
 .top-footer {
   min-height: 500px;
   background-image: url("../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
 }
 
