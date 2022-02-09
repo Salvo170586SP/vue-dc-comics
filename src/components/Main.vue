@@ -3,20 +3,20 @@
     <section id="jumbotron">
       <h3>CURRENT SERIES</h3>
     </section>
-    <section class="container book-container">
-      <div class="book-card" v-for="(book, index) in books" :key="index">
-        <figure>
-          <img :src="book.thumb" :alt="book.series" />
-        </figure>
-        <h4>{{ book.series }}</h4>
-      </div>
+    <section class="container book-container">  
+    <BookCard v-for="(book, index) in books" :key="index" :book="book" />
     </section>
   </main>
 </template>
 
 <script>
+import BookCard from './BookCard.vue';
 export default {
   name: "Main",
+
+  components: {
+    BookCard,
+  },
 
   data() {
     return {
@@ -137,28 +137,5 @@ main {
   flex-wrap: wrap;
   height: 600px;
   margin-top: 100px;
-
-  .book-card{
-    flex-basis: calc(100% / 6)
-  }
-
-
-  figure{
-    overflow: hidden;
-    width: 180px;
-    height: 180px;
-
-    img{
-      width: 100%;
-    }
-  }
-
-  h4{
-    margin-top: 20px;
-  }
-
 }
-
-
-
 </style>
