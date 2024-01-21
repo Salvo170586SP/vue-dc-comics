@@ -21,15 +21,22 @@ export default {
   figure {
     overflow: hidden;
     width: 180px;
-    height: 180px;
+    height: 190px;
+    border-radius: 10px;
+    margin-bottom: 7px;
 
     img {
       width: 100%;
+      &:hover{
+        transform: scale(1.2);
+        transition: 0.2s;
+      }
     }
+
   }
 
   h4 {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 </style>
